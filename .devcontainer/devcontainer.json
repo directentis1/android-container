@@ -11,15 +11,11 @@
 
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
-        "ms-dotnettools.csharp",
-        "wakatime.vscode-wakatime",
         "fernandoescolar.vscode-solution-explorer",
         "adrianwilczynski.add-reference",
-        "kreativ-software.csharpextensions",
         "k--kato.docomment",
         "pranaygp.vscode-css-peek",
         "dbaeumer.vscode-eslint",
         "patcx.vscode-nuget-gallery",
-        "derivitec-ltd.vscode-dotnet-adapter"
     ],
 }
