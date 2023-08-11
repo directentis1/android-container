@@ -1,12 +1,25 @@
-version: '3.3'
-services:
-    docker-android:
-        ports:
-            - '6080:6080'
-        environment:
-            - 'EMULATOR_DEVICE=Samsung Galaxy S9'
-            - WEB_VNC=true
-        devices:
-            - /dev/kvm
-        container_name: android-container
-        image: 'budtmo/docker-android:emulator_10.0'
+{
+    "name": "A Docker Android Test",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "docker-android",
+    "workspaceFolder": "/workspaces/android-container",
+
+    // Set *default* container specific settings.json values on container create.
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+
+    // Add the IDs of extensions you want installed when the container is created.
+    "extensions": [
+        "ms-dotnettools.csharp",
+        "wakatime.vscode-wakatime",
+        "fernandoescolar.vscode-solution-explorer",
+        "adrianwilczynski.add-reference",
+        "kreativ-software.csharpextensions",
+        "k--kato.docomment",
+        "pranaygp.vscode-css-peek",
+        "dbaeumer.vscode-eslint",
+        "patcx.vscode-nuget-gallery",
+        "derivitec-ltd.vscode-dotnet-adapter"
+    ],
+}
