@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+    docker-android:
+        ports:
+            - '6080:6080'
+        environment:
+            - 'EMULATOR_DEVICE=Samsung Galaxy S9'
+            - WEB_VNC=true
+        devices:
+            - /dev/kvm
+        container_name: android-container
+        image: 'budtmo/docker-android:emulator_10.0'
